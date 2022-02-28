@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">    <title>Puissance 4</title>
+</head>
+<body>
+    <div id="win" style="visibility:hidden;"></div>
+    <div id="print_form">
+        <h1>Puissance 4</h1>
+        <form id="form" action="#" method="get">
+            <hr>
+            <label for="COL">Choisissez le nombre de colonnes: </label>
+            <input type="number" name="COL" class="nbr_col" placeholder="4" min="4" max="10" value="4">
+            <br>
+            <label for="LGN">Choisissez le nombre de lignes: </label>
+            <input type="number" name="LGN" class="nbr_lgn" placeholder="4" min="4" max="15" value="4">
+            <br>
+            <hr>
+            <label for="color1">Choisissez la couleur du joueur 1: </label>
+            <input type="color" name="color1" class="player1_color" value="#FF0000">
+            <br>
+            <label for="color2">Choisissez la couleur du joueur 2: </label>
+            <input type="color" name="color2" class="player2_color" value="#FFFF00">
+            <br>
+            <hr>
+            <input id="send" type="button" value="SUBMIT">
+        </form>
+        <audio id="start" src="mixkit-arcade-retro-scoring-counter-273.wav" type="audio/wav"></audio>
+        <audio id="victory" src="mixkit-video-game-win-2016.wav" type="audio/wav"></audio>
+        <audio id="lose" src="mixkit-retro-arcade-lose-2027.wav" type="audio/wav"></audio>
+
+    </div>
+    <h1 id="role" style="visibility:hidden;">Joueur 1</h1>
+    <div id="game" style="visibility:hidden;"></div>
+    <br>
+    <button id="restart" style="visibility:hidden;">RESTART</button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/p4.js"></script>
+</body>
+</html>

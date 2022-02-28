@@ -1,0 +1,65 @@
+body {
+    background-color: black;
+    text-align: center;
+    font-family: 'Press Start 2P', cursive;}
+
+#game {
+    display: inline-block;
+    text-align: center;
+    background-color: blue;
+}
+
+#print_form {
+    color: white;
+    font-size: 1.7rem;
+}
+
+h1 {
+    color: white;
+}
+
+input {
+    font-family: 'Press Start 2P', cursive;
+    text-align: center;
+    font-size: 1.6rem;
+}
+
+.player1_color, .player2_color {
+    height: 2rem;
+    width: 5rem;
+}
+
+.col {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: black;
+    margin: 5px;
+    display: inline-block;
+}
+
+.col.empty {
+    cursor: pointer;
+}
+
+#win {
+    color: white;
+    font-size: 1.5cm;
+    margin-bottom: 50px;
+}
+
+#restart, #send {
+    margin-top: 50px;
+    height: 2cm;
+    width: auto;
+    font-size: 1cm;
+    border-radius: 0.25rem;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#restart:hover, #send:hover  {
+    transform: scale(1.2);
+    background-color: white;
+}
